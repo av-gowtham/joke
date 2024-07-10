@@ -13,7 +13,7 @@ body {
   padding: 0;
 }
 
-div {
+.container {
   height: 50vh;
   width: 50vw;
   display: flex;
@@ -22,7 +22,7 @@ div {
   align-items: center;
 }
 
-div .joke {
+.joke {
   color: #aaae7f;
   font-size: 20px;
   font-weight: 600;
@@ -32,7 +32,7 @@ div .joke {
   text-align: center;
 }
 
-div button {
+button {
   border: none;
   border-radius: 10px;
   background-color: #143109;
@@ -53,8 +53,8 @@ b {
 }
 
 @media (max-width: 900px) {
-  div {
-    height: 90vh;
+  .container {
+    height: 70vh;
     width: 90vw;
   }
 }

@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <p className="joke">{joke}</p>
       <button onClick={handleJoke}>
         {loading ? "loading..." : "Get jokes"}
