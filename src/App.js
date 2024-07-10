@@ -11,11 +11,9 @@ function App() {
     }
     try {
       setLoading(true);
-      const res = await fetch(
-        "https://geek-jokes.sameerkumar.website/api?format=json"
-      );
+      const res = await fetch("https://icanhazdadjoke.com/slack");
       const data = await res.json();
-      setJoke(data.joke);
+      setJoke(data.attachments[0].text);
       setCount((c) => c + 1);
     } catch (e) {
       console.log("Error fetching joke: ", e);
